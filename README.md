@@ -1,5 +1,3 @@
-Postman API Link: https://api.postman.com/collections/22237577-2ffc725a-871b-4c22-bd51-6eae993d0ffd?access_key=PMAT-01GYAZ6PVKGDQM4Y81GNEHH5JA
-
 Postman Docs: https://documenter.getpostman.com/view/22237577/2s93XzyiXJ
 
 Getting Started
