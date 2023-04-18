@@ -16,7 +16,7 @@ function getRandomCoordinates(center: number[], radius: number) {
   return [newLongitude, newLatitude];
 }
 
-router.post("/addRestaurants", async (req, res) => {
+router.post("/addrestaurants", async (req, res) => {
   const { centerLongitude, centerLatitude, radius, numberOfRestaurants } =
     req.body;
 
