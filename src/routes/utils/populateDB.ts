@@ -20,6 +20,16 @@ router.post("/addrestaurants", async (req, res) => {
   const { centerLongitude, centerLatitude, radius, numberOfRestaurants } =
     req.body;
 
+  if (radius < 1 || radius > 10000) {
+    res.status(400).send({ error: "Invalid radius value" });
+    return;
+  }
+
+  if (numberOfRestaurants < 1 || numberOfRestaurants > 1000) {
+    res.status(400).send({ error: "Invalid number of restaurants value" });
+    return;
+  }
+
   const center = [centerLongitude, centerLatitude];
 
   const restaurants = [];

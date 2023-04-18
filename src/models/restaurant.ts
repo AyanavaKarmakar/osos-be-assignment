@@ -25,6 +25,8 @@ const RestaurantSchema = new Schema({
   ratings: [Number],
 });
 
+RestaurantSchema.index({ location: "2dsphere" });
+
 export const Restaurant = model<IRestaurantDocument, RestaurantModel>(
   "Restaurant",
   RestaurantSchema
