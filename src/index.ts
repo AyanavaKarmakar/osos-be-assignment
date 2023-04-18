@@ -14,9 +14,8 @@ app.use("/populatedb", PopulateDBRouter);
 
 const start = async () => {
   try {
-    console.log(process.env.MONGODB_URI);
     console.log("Connecting to DB...");
-    // await connectDB(process.env.MONGODB_URI as string);
+    await connectDB(process.env.MONGODB_URI as string);
     console.log("Connected to DB!");
 
     app.listen(process.env.PORT || 3000, () => {
